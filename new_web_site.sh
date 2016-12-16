@@ -60,11 +60,10 @@ else
     echo "***********************************"
 fi
 
-read -p "Do you want to restart apache? (y/n) : " APACHE
+APACHE="y"
 
 if [ $APACHE == "y" ]
 then
-    echo "Enter the password sudo"
     sudo apachectl restart
     echo "Apache restarted!"
     echo "***********************************"
