@@ -15,10 +15,10 @@ if [[ ! -z $SITEPATH_USER ]]
 then
     SITEPATH="/Users/$SITEPATH_USER/Sites/$SITE"
     echo "the path will be : ${SITEPATH}"
-    mkdir -m 777 $SITEPATH
-    mkdir -m 777 $SITEPATH/httpdocs
-    mkdir -m 777 $SITEPATH/logs
-    mkdir -m 777 $SITEPATH/ssp
+    mkdir -m 755 $SITEPATH
+    mkdir -m 755 $SITEPATH/httpdocs
+    mkdir -m 755 $SITEPATH/logs
+    mkdir -m 755 $SITEPATH/ssp
     echo "folders ${SITEPATH} created successfully..."
     echo "***********************************"
 else
